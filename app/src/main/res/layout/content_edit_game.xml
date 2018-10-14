@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EditGame"
+    tools:showIn="@layout/activity_edit_game"
+    android:background="@color/colorBackgroundDark">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/gameEditCard"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:text="Title"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="100dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/platfrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:text="Platform"
+            android:paddingLeft="20dp"
+            android:layout_marginBottom="45dp"
+            android:textColor="@android:color/darker_gray"/>
+        <EditText
+            android:id="@+id/edit_platform"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:text="Notes"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/darker_gray"/>
+        <EditText
+            android:id="@+id/edit_notes"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="135dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:text="Status"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="65dp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <Spinner
+            android:id="@+id/edit_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="10dp"/>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

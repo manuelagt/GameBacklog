@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/placeCard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true">
+
+
+        <TextView
+            android:id="@+id/game_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:layout_marginLeft="20dp"
+            android:text="The Witcher 3"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textStyle="italic"/>
+        <TextView
+            android:id="@+id/console_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:text="PC"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/darker_gray"
+            />
+        <TextView
+            android:id="@+id/game_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:text="Playing"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="100dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/darker_gray"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:text="31/10/2017"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="250dp"
+            android:textColor="@android:color/darker_gray"/>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
